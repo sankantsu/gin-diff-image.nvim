@@ -19,7 +19,7 @@ return document.create_document_integration({
         local path = string.sub(line, end_col + 1, -1)
         local image = {
           node = nil,
-          range = { start_row = i, end_row = i + 1, start_col = 0, end_col = string.len(line) },
+          range = { start_row = i - 1, end_row = i, start_col = 0, end_col = string.len(line) },
           url = path,
         }
         print(vim.inspect(image))

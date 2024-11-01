@@ -24,20 +24,20 @@ package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/shar
 package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua"
 
 require("lazy").setup({
-    -- dependencies
-	"vim-denops/denops.vim",
-	"lambdalisue/vim-gin",
-	"3rd/image.nvim",
-    -- this plugin
-	"sankantsu/gin-diff-image.nvim",
+  -- dependencies
+  "vim-denops/denops.vim",
+  "lambdalisue/vim-gin",
+  "3rd/image.nvim",
+  -- this plugin
+  "sankantsu/gin-diff-image.nvim",
 })
 
 require("image").setup({
-	integrations = {
-		gindiff = {
-			enabled = true,  -- enable gin-diff image integration
-		},
-	},
+  integrations = {
+    gindiff = {
+      enabled = true,  -- enable gin-diff image integration
+    },
+  },
 })
 ```
 
